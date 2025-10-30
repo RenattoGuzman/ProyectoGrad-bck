@@ -16,7 +16,7 @@ app.include_router(montecarlo.router, tags=["montecarlo"])
 
 app.add_middleware(
   CORSMiddleware,
-  allow_origins=["*"],  # replace with specific origins in production, e.g. ["http://localhost:3000"]
+  allow_origins=["http://localhost:5173", "https://v7vzxsv8-5173.use2.devtunnels.ms"],  # replace with specific origins in production, e.g. ["http://localhost:3000"]
   allow_credentials=True,
   allow_methods=["*"],
   allow_headers=["*"],
